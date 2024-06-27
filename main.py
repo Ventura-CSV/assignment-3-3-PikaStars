@@ -7,9 +7,11 @@ def main():
     ########################################
     """
     result = False
-    
     if (email[0].isalpha()):
-        result = True
+        if (len(email) > 5 and len(email) < 30):
+            if (email.find("@") != -1):
+                result = True
+    
     print(result)
     ########################################
     # Do not delete the return statement
