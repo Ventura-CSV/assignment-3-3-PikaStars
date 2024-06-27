@@ -10,7 +10,8 @@ def main():
     if (email[0].isalpha()):
         if (len(email) > 5 and len(email) < 30):
             if (email.find("@") != -1):
-                result = True
+                if (email.find("@") < email.find(".")):
+                    result = True
     
     print(result)
     ########################################
